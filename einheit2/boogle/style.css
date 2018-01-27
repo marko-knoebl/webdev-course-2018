@@ -1,0 +1,18 @@
+#menu-bar {
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-bar-link {
+  text-decoration: none;
+}
+
+/*
+
+nicht unterstrichen: text-decoration
+textfarbe: color
+hintergrund: background-color
+abstand zum Rand: padding
+abstand zu anderen Elementen: margin
+
+*/
