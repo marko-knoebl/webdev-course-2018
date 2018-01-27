@@ -176,25 +176,21 @@ vollständige Listen:
 
 
 
-Links
-=====
+HTML-Tags im Detail
+===================
+
+## Links
 ```html
 <a href="https://google.com" target="_blank">Google</a>
 ```
 ```target="_blank"``` öffnet den Link in einem neuen Fenster / Tab.
 
-
-
-Bilder
-======
+## Bilder
 ```html
 <img src="portrait.png" alt="portrait of John Doe">
 ```
 
-
-
-Tabellen
-========
+## Tabellen
 Beispiel:
 ```html
 <table>
@@ -216,101 +212,3 @@ Beispiel:
   <tr>
 </table>
 ```
-
-
-general HTML attributes
-=======================
-
-lang="de" (usually on <HTML> elements)
-
-
-
-lists
-=====
-
-```html
-<ul>
-  <li>shopping</li>
-  <li>taxes</li>
-</ul>
-<ol>
-  <li>learn HTML</li>
-  <li>learn CSS</li>
-  <li>learn JavaScript</li>
-</ol>
-```
-
-
-
-media
-=====
-
-## img
-
-attributes:
-* src: location of the image
-* alt: alternative text if the image cannot be displayed
-* srcset?
-```html
-<img src="foo.png">
-```
-
-## picture
-```html
-<picture>
-  <source srcset="portrait-lg.png" media="(min-width: 600px)">
-  <source srcset="portrait-md.png" media="(min-width: 400px)">
-  <img src="portrait-sm.png">
-</picture>
-```
-
-## video
-```html
-<video src="myvideo.mk" autoplay controls>
-</video>
-```
-
-## audio
-```html
-<audio src="myaudio.mk" loop volume="0.5"></audio>
-```
-
-## tables
-```html
-<table>
-  <caption>opening hours</caption>
-  <tr>
-    <th>Day</th>
-    <th>Hours</th>
-  </tr>
-  <tr>
-    <td>Monday</td>
-    <td>9:00-17:00</td>
-  </tr>
-  <tr>
-    <td>Tuesday</td>
-    <td rowspan="2">10:00-17:00</td>
-  <tr>
-  <tr>
-    <td>Wednesday</td>
-  <tr>
-</table>
-```
-
-### table styling
-```css
-table {
-  border-collapse: collapse;
-}
-tr:hover:nth-child(n) {
-  background-color: lightgrey;
-}
-tr:nth-child(2n) {
-  background-color: skyblue;
-}
-```
-
-## forms
-
-
-
