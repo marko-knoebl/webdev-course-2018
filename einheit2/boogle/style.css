@@ -5,6 +5,31 @@
 
 .menu-bar-link {
   text-decoration: none;
+  margin: 0 10px 0 0;
+}
+
+#login-button {
+  color: rgb(255, 255, 255);
+  background-color: #4285f4;
+  border-radius: 3px;
+  border: none;
+  /* padding: oben/unten links/rechts */
+  padding: 4px 8px;
+}
+
+#main {
+  margin-top: 150px;
+  text-align: center;
+}
+
+#boogle {
+  font-size: 90px;
+  font-family: Arial;
+}
+
+#search-box {
+  width: 300px;
+  box-shadow: 0px 5px 5px #bbb;
 }
 
 /*
