@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Messageboard{% endblock title %}
+
+{% block page_content %}
+    <h1>Hello, SmartNinja!</h1>
+
+    <a href="add-message">Add Message</a>
+
+    {{messages}}
+{% endblock page_content %}

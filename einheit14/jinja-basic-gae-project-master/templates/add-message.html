@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Add Message{% endblock title %}
+
+{% block page_content %}
+    <h1>Add Message</h1>
+
+    <form method="post" action="/post">
+        <input name="message">
+        <button type="submit">Send</button>
+    </form>
+{% endblock page_content %}
