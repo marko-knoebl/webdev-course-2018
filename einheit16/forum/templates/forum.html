@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum</title>
+</head>
+<body>
+    <a href="/">Home</a><br>
+
+    {% for message in messages %}
+        <div>
+            <h2>{{message.title}}</h2>
+            {{message.key.id()}}:{{message.message_text}}<br>
+
+            <a href="message/{{ message.key.id() }}">view message</a>
+        </div>
+    {% endfor %}
+
+    <a href="/add-post">Add Post</a>
+</body>
+</html>

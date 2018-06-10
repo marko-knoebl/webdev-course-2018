@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message Details</title>
+</head>
+<body>
+    <h1>Message</h1>
+
+    <h2>{{message.title}}</h2>
+
+    <form action="/edit/{{message.key.id()}}" method="post">
+        <input value="{{message.message_text}}" name="new-text"> <br>
+
+        <button>Save</button>
+    </form>
+
+    <a href="/forum">back</a>
+</body>
+</html>
