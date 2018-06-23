@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum</title>
+</head>
+<body>
+    <a href="/">Home</a><br>
+
+    {{ logged_in }}
+
+    {% if logged_in %}
+
+        Hello, {{nickname}}!
+
+        <a href="{{logout_url}}">log out</a>
+
+        {% for message in messages %}
+            <div>
+                <h2>{{message.title}}</h2>
+                {{message.message_text}}<br>
+
+                <a href="message/{{ message.key.id() }}">view message</a>
+            </div>
+        {% endfor %}
+
+        <a href="/add-post">Add Post</a>
+
+    {% else %}
+        Please log in <a href="{{login_url}}">here</a>
+    {% endif %}
+
+</body>
+</html>
